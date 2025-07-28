@@ -1,0 +1,668 @@
+:root {
+  background: #e8fff1;
+}
+.action-btn.opened {
+  padding: 8px 16px;
+  border: 4px solid #03b815;
+  background-color: #008a0e;
+  height: 55px;
+  width: 295px;
+  color: #ffffff;
+  font-weight: 950;
+  font-size: larger;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: inset 5px solid #b3ffbb;
+}
+
+.about h5 {
+  text-align: left;
+  font-size: 15.5px;
+  color: #028b0c;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.card5 {
+  height: fit-content;
+  margin-right: 1rem;
+  margin-top: -12rem;
+}
+
+.impacted-statement {
+  position: absolute;
+  width: 46%;
+  top: 80rem;
+}
+
+.impact-text .signatured-line {
+  font-size: 21px;
+  font-family: "Borel", cursive;
+  font-weight: 500;
+  text-align: justify;
+  color: #016508;
+}
+.tools-section {
+  padding: 30px;
+  background: #e8fff1;
+  text-align: center;
+}
+.tool-btn {
+  background-color: #06d11a;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  height: 55px;
+  width: 225px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 6px #00761a;
+}
+.tool-btn:hover {
+  background-color: #048210;
+}
+.sub-btn {
+  margin-left: 20px;
+  background-color: #37d85e;
+}
+.hidden {
+  display: none;
+}
+.tool-section {
+  background: #ccf5cf;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e8fff1;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #86f788;
+}
+
+.skin-assessment {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #e8fff1;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(6, 209, 26, 0.438);
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  text-align: center;
+  color: #00870e;
+  margin-bottom: 30px;
+}
+/* === Question Block Styles === */
+.question-block {
+  margin-bottom: 30px;
+  animation: fadeIn 0.4s ease;
+}
+
+.question-block label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Input + Select styles */
+.question-block select,
+.question-block input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #06e01b;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f0fff0;
+  color: #000;
+}
+
+/* === Multi-Checkbox Group as Card === */
+.checkbox-group {
+  border: 2px solid #06e01b;
+  background-color: #eaffea;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Each checkbox-option as a row */
+.checkbox-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #000;
+  font-size: 1rem;
+}
+
+/* Styled checkboxes */
+.checkbox-option input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #06e01b;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.checkbox-option input[type="checkbox"]:checked {
+  background-color: #06e01b;
+  border-color: #06e01b;
+}
+
+.checkbox-option input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.checkbox-option input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+/* === Button inside question === */
+.question-block button {
+  margin-top: 15px;
+  background-color: #00a210;
+  color: #d1ffd1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* === Progress bar === */
+.progress-bar {
+  height: 15px;
+  background: linear-gradient(to right, #3ff52e, #01ba1f);
+  transition: width 0.3s ease;
+  margin-bottom: 2rem;
+  border-radius: 9px;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: rgb(0, 87, 26);
+  justify-content: center;
+}
+
+/* === Submit + Clear buttons === */
+.end-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.end-buttons button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #006217;
+  color: white;
+  transition: 0.2s;
+}
+
+.end-buttons button:hover {
+  opacity: 0.85;
+}
+
+.end-buttons button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.upload-container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background: #f0fff4;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 100, 0.2);
+}
+
+.upload-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #008f4c;
+  margin-bottom: 0.5rem;
+}
+
+.upload-instructions {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.upload-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  animation: floatUp 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(0, 255, 150, 0.4));
+  transition: transform 0.4s ease;
+}
+
+.upload-animation:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 20px rgba(0, 255, 150, 0.7));
+}
+
+.upload-animation dotlottie-player {
+  width: 350px;
+  height: 350px;
+}
+
+.upload-box {
+  background: #f2fdf2;
+  padding: 2rem;
+  border: 2px dashed #00cc66;
+  border-radius: 12px;
+  position: relative;
+}
+
+.custom-upload {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #00cc66;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.custom-upload:hover {
+  background: #00994d;
+}
+
+.image-preview {
+  margin-top: 1.5rem;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.upload-actions {
+  margin-top: 1rem;
+}
+
+.upload-actions button {
+  margin: 0 10px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background-color: #00cc66;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-actions button:hover {
+  background-color: #007a3d;
+}
+
+.hidden {
+  display: none;
+}
+
+.result-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #00590d;
+  animation: slideDown 0.6s ease;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.info-block {
+  background: #def3e0;
+  border-left: 5px solid #009b21;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  animation: fadeInupload 0.5s ease forwards;
+  box-shadow: 0 2px 8px rgba(0, 155, 33, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-block:hover {
+  transform: scale(1.02);
+}
+
+.info-block h4 {
+  margin: 0 0 0.4rem;
+  color: #008e00;
+  font-size: 1.1rem;
+}
+
+.map-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #0a8326;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  animation: fadeInupload 0.8s ease;
+  box-shadow: 0 4px 12px rgba(10, 131, 38, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.map-button:hover {
+  background: #00791f;
+  transform: translateY(-2px);
+}
+
+.pdf-button {
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #0a8326;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  animation: fadeInupload 0.8s ease;
+  box-shadow: 0 4px 12px rgba(10, 131, 38, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pdf-button:hover {
+  background: #00791f;
+  transform: translateY(-2px);
+}
+
+#videoFeed {
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+  max-width: 650px;
+  max-height: 550px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgb(1, 143, 37);
+  display: none;
+  position: relative;
+  justify-self: center;
+}
+
+#capturedImage {
+  width: 100%;
+  height: 100%;
+  max-height: 550px;
+  max-width: 650px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 149, 22, 0.669);
+  display: none;
+  position: relative;
+  justify-self: center;
+}
+
+#captureCanvas {
+  display: none;
+}
+
+#cameraButtons,
+#postCaptureButtons {
+  margin-top: 25px;
+}
+
+#capturedImage:hover,
+#videoFeed:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgb(1, 114, 29);
+}
+
+#cameraButtons button,
+#postCaptureButtons button,
+#openCamera button {
+  padding: 8px 18px;
+  margin-right: 10px;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(1, 148, 48);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#cameraButtons button:hover,
+#postCaptureButtons button:hover,
+#openCamera button:hover {
+  background-color: rgb(0, 84, 0);
+}
+.caminfo {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background: #e9fdef;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 60, 0.2);
+}
+.card ol {
+  padding-left: 20px;
+  color: #005b11;
+}
+.ipcam-input {
+  margin: 20px auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ipcam-input label {
+  font-size: 1.2rem;
+  color: #007a3d;
+  font-weight: 900;
+  margin: 2rem;
+}
+.ipcam-input input {
+  padding: 10px;
+  border: 2px solid #027a00;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.ipcam-btns button:first-child {
+  background-color: #00c72e;
+  box-shadow: 0 2px 10px #0e7500;
+  color: white;
+}
+.ipcam-btns button:last-child {
+  background-color: #f2263a;
+  box-shadow: 0 2px 10px #750000;
+  color: white;
+}
+.ipcam-btns button:first-child:hover {
+  background-color: #009821;
+  transform: scale(1.1);
+}
+.ipcam-btns button:last-child:hover {
+  background-color: #bc0000;
+  transform: scale(1.1);
+}
+.feedback {
+  font-size: 1rem;
+  color: #c91a71;
+}
+#ipcamFeed,
+#ipCapturedImage {
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(2, 137, 45, 0.74);
+  border-color: 2px solid #007a3d;
+}
+.video-preview {
+  margin-bottom: 10rem;
+}
+#ipcamCanvas {
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+  box-shadow: 0 3px 8px #00ac06;
+}
+.ipcam-btns {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  justify-self: center;
+}
+.ipcam-btns button {
+  padding: 15px 15px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #15b700;
+  font-size: 1rem;
+  border: none; 
+  outline: none; 
+  border-radius: 6px; 
+  cursor: pointer;
+  justify-self: center;
+  margin: 2rem;
+}
+
+.ipcam-buttons button {
+  outline-style: none;
+  border-style: none;
+  background-color: #00ac06;
+  color: white;
+  border-radius: 8px;
+  border-color: 2px solid #00791f;
+  box-shadow: 0 3px 10px #00cc66;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  justify-self: center;
+  margin-top: -100px;
+}
+.ipPostCaptureButtons {
+  width: 100%;
+  max-width: fit-content;
+  display: flex;
+  justify-self: center;
+}
+.ipPostCaptureButtons button {
+  margin: 2rem;
+  outline-style: none;
+  border-style: none;
+  background-color: #00ac06;
+  color: white;
+  border-radius: 8px;
+  border-color: 2px solid #00791f;
+  box-shadow: 0 3px 10px #00cc66;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  justify-self: center;
+}
+.ipcam-buttons button:hover {
+  background-color: #007a0a;
+  transform: scale(1.1);
+}
+.ipPostCaptureButtons {
+  display: none;
+}
+.ipPostCaptureButtons button:hover {
+  background-color: #006d0d;
+  transform: scale(1.1);
+}
+
+
+@keyframes fadeInupload {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional subtle float animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .action-btn.opened {
+    width: 100%;
+    font-size: 1rem;
+    height: 45px;
+  }
+}

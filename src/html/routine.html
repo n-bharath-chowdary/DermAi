@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      DermAI - Your personalized dermatologist powered by AI for accurate
+      results.
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of N Bharath Chowdary - an AI/ML engineer from Yadgir. Explore top AI projects, ML solutions, and web/app development work."
+    />
+    <meta
+      name="keywords"
+      content="n bharath, bharath chowdary, n bharath chowdary, ai, ml engineer, yadgir, top ai ml engineers, portfolio, ai,ml portfolio"
+    />
+    <meta name="author" content="N Bharath Chowdary" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/disease_style.css" />
+    <link rel="stylesheet" href="/src/css/routine_style.css" />
+    <link
+      rel="shortcut icon"
+      href="/src/img/logo2.png"
+      type="image/x-icon"
+      style="border-radius: 50px"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="/src/js/index.js"></script>
+    <!-- <script src="/src/js/disease.js"></script> -->
+    <script src="/src/js/routine.js"></script>
+    <script src="/src/js/ui.js"></script>
+    <script src="/src/js/loader.js"></script>
+  </head>
+  <body>
+    <div id="face-scanner-loader">
+      <!-- <div class="scan-overlay" id="overlay-scan"></div> -->
+      <img
+        src="/src/img/logo.gif"
+        alt="Face Scanner Grid"
+        class="scanner-grid"
+      />
+    </div>
+
+    <header>
+      <a class="a-logo animate-fade" href="/src/html/index.html">
+        <div class="logo animate-slide">
+          <h1>DermAI</h1>
+          <h3>Scan, Fix, Glow</h3>
+        </div>
+      </a>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <!-- <h1 class="slogan">Scan your skin, understand your needs, and unlock the glow you deserve.</h1> -->
+      <div class="nav-container">
+        <nav class="nav-links" id="navLinks">
+          <a href="/src/html/index.html#home">Home</a>
+          <a href="/src/html/index.html#about">About</a>
+          <a href="/src/html/index.html#faq">FAQ</a>
+          <a href="https://kiddosphere.in">Founder</a>
+          <!-- <a href="/src/html/login.html">Login</a> -->
+        </nav>
+      </div>
+      <div class="header-scan-overlay"></div>
+    </header>
+    <div class="sticky-action-bar">
+      <a href="/src/html/disease.html"
+        ><button class="action-btn">Detect Disease</button></a
+      >
+      <a href="/src/html/routine.html"
+        ><button class="action-btn opened">Skin Care Routine</button></a
+      >
+    </div>
+    <main>
+      <div class="card">
+        <div class="instructions">
+          <h3>NOTE</h3>
+          <p>
+            Welcome to your Personalized Skincare Journey with DermAI! Want
+            glowing, healthy skin? Start by answering a few simple questions
+            about your skin behavior. DermAI will then recommend a skincare
+            routine tailored to your unique skin type—dry, oily, combination, or
+            sensitive. You don’t need makeup or perfect lighting—just honest
+            answers and a few minutes. The more accurate your input, the better
+            your custom routine will be. No data is stored unless you choose to
+            save your results.<br /><br />
+            💡 Think of this as your AI skincare coach—smart, fast, and always
+            available. <br /><br />Click Skin Care Routine to begin your guided
+            assessment and discover what your skin really needs.
+          </p>
+        </div>
+      </div>
+      <section class="about">
+        <h2>
+          <strong>Personalised</strong> Skincare recommendations for
+          <span>EVERYONE</span>
+        </h2>
+
+        <div class="card-grid">
+          <div class="card-style card1">
+            <img src="/src/img/wash.jpg" alt="Step 1" />
+            <div class="card-content">
+              <h4>Step 1</h4>
+              <p>
+                Clean your <strong>face </strong> before
+                <strong>2 hours</strong> of scanning and make sure
+                <strong
+                  >no serums, mostirizers, sunscreen or any type of creams are
+                  not applied</strong
+                >
+                to get the exact skin conditions and get the
+                <strong>best and accurate results.</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="card-style card2">
+            <img src="/src/img/step2.png" alt="Step 2" />
+            <div class="card-content">
+              <h4>Step 2</h4>
+              <p>
+                Open <strong>DERMAI</strong> in your laptop/desktop or in
+                mobile, then read all the details about
+                <strong>DERMAI</strong> and click
+                <strong>Detect Disease</strong> for detection of disease or
+                <strong>Skin Care Routine</strong>
+                for getting personalised routine for your skin and products that
+                suites you.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-style card3">
+            <img src="/src/img/step3.png" alt="Step 3" />
+            <div class="card-content">
+              <h4>Step 3</h4>
+              <p>
+                AI analyzes over <strong>15+ metrics</strong> to evaluate your
+                skin health instantly. And keeps it available whenever you login
+                to your <strong>account</strong> and get your
+                <strong>Diagnosis </strong> as well as
+                <strong> Routine</strong> to your email directly.
+              </p>
+            </div>
+          </div>
+          <div class="card-style card4">
+            <img src="/src/img/routine3.webp" alt="Step 4" />
+            <div class="card-content">
+              <h4>Step 4</h4>
+              <p>
+                Get a customized skincare routine with suitable product
+                <strong>Recommendations</strong> that just dont
+                <strong>Suites</strong> your skin but makes a huge impact on
+                making it <strong>Glow</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="impact-statement">
+            <div class="impact-text">
+              <h3>Trusted by Skincare Enthusiasts & Experts</h3>
+              <p>
+                Brands and individuals using <strong>DERMAI</strong> have seen
+                up to a <strong>40% improvement</strong> in skincare results and
+                routine consistency — backed by AI, built for your skin.
+              </p>
+              <div class="signature-line">
+                ✨ Empowering Skin Intelligence ✨
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tools-section" id="tools-section">
+        <div class="tool-tabs">
+          <button class="tool-btn" onclick="showSection('details')">
+            Enter Details
+          </button>
+          <button class="tool-btn" onclick="showSection('upload')">
+            Upload Image
+          </button>
+          <button class="tool-btn" onclick="toggleCamera()">Camera ▾</button>
+          <div id="camera-options" class="camera-sub-options hidden">
+            <button class="tool-btn sub-btn" onclick="showSection('camera')">
+              📷 Camera
+            </button>
+            <button class="tool-btn sub-btn" onclick="showSection('ipcam')">
+              🌐 IP Cam
+            </button>
+          </div>
+        </div>
+
+        <div id="details" class="tool-section hidden">
+          <div class="card">
+            <div class="enter-instructions">
+              <h2>
+                💡 Just a few quick steps to discover your perfect skincare
+                routine.
+              </h2>
+              <p>
+                Please ensure it's been at least 2 hours since you last washed
+                your face — this helps your skin’s natural state become visible.
+                Answer each question honestly based on how your skin feels and
+                behaves naturally. No mirrors needed — just your observations!
+                The questions will include multiple-choice and text-based
+                options. Once completed, you'll get a detailed report of your
+                skin type, issues, and recommended products. You can choose to
+                download the report, send it to your email, or browse
+                personalized product suggestions right away.<br />
+                <span
+                  >Let’s unlock the best version of your skin, one answer at a
+                  time. 🌿</span
+                >
+              </p>
+            </div>
+          </div>
+          <section class="skin-assessment">
+            <h2 class="title">🧪 Personalized Skin Type Assessment</h2>
+            <form id="skinTypeForm" class="skin-type-form"></form>
+            <div id="DetailsDiagnosisResults" class="diagnosis-section"></div>
+          </section>
+        </div>
+        
+        <div id="upload" class="tool-section hidden">
+          <div class="upload-container">
+            <h2 class="upload-title">📸 Upload a Clear Face Image</h2>
+            <p class="upload-instructions">
+              Make sure your face is clearly visible, centered, and in
+              a well-lit environment. Avoid heavy makeup, filters, or shadows.
+            </p>
+
+            <div class="upload-animation">
+              <img
+                src="/src/img/face.gif"
+                alt="uploading"
+                style="width: 220px; height: 210px"
+              />
+            </div>
+
+            <div class="upload-box">
+              <label for="imageInput" class="custom-upload">
+                <span>📁 Choose Image</span>
+                <input
+                  type="file"
+                  id="imageInput"
+                  accept="image/*"
+                  onchange="previewImage()"
+                  hidden
+                />
+              </label>
+
+              <div id="imagePreviewContainer" class="image-preview hidden">
+                <img id="previewImage" src="#" alt="Preview" />
+                <div class="upload-actions">
+                  <button onclick="submitImage()">Upload</button>
+                  <button onclick="clearImage()">Clear</button>
+                </div>
+              </div>
+              <div id="diagnosisResults" class="diagnosis-section"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="camera" class="tool-section hidden">
+          <div class="caminfo">
+            <div id="cameraGIF" class="upload-animation">
+              <img
+                src="/src/img/face-scan.gif"
+                alt="uploading"
+                style="width: 270px; height: 260px"
+              />
+            </div>
+            <div class="video-preview">
+              <video id="videoFeed" autoplay playsinline></video>
+            </div>
+
+            <canvas id="captureCanvas"></canvas>
+            <img id="capturedImage" />
+            <div id="openCamera">
+              <button id="openCamBtn">📷 Open Camera</button>
+            </div>
+
+            <div id="cameraButtons">
+              <button id="captureBtn">📸 Capture</button>
+            </div>
+
+            <div id="postCaptureButtons">
+              <button id="uploadBtn">⬆️ Upload</button>
+              <button id="retakeBtn">🔄 Retake</button>
+            </div>
+            <div id="CameradiagnosisResults" class="diagnosis-section"></div>
+          </div>
+        </div>
+
+        <div id="ipcam" class="tool-section hidden">
+          <div class="upload-container">
+            <!-- 🔔 Instruction Card -->
+          <div class="card">
+            <h3>📱 Steps to Connect Mobile IP Webcam</h3>
+            <ol>
+              <li>
+                Download and open <strong>IP Webcam</strong> app on your phone.
+              </li>
+              <li>
+                Start the server in the app and copy the URL (e.g.,
+                <code>http://192.168.x.x:8080</code>).
+              </li>
+              <li>Enter the URL below and click <strong>Connect</strong>.</li>
+            </ol>
+          </div>
+
+          <div id="ipcameraGIF" class="upload-animation">
+            <img
+              src="/src/img/mobile-connect.gif"
+              alt="uploading"
+              style="width: 200px; height: 175px"
+            />
+          </div>
+
+          <!-- 🔗 URL Input Section -->
+          <div class="ipcam-input">
+            <label for="ipcamURL">🔗 IP Webcam URL:</label>
+            <input
+              type="text"
+              id="ipcamURL"
+              placeholder="http://192.168.x.x:8080/video"
+              oninput="validateIPURL(this.value)"
+            />
+            <div id="urlFeedback" class="feedback"></div>
+            <div class="ipcam-btns">
+              <button onclick="connectIPCam()">🔌 Connect</button>
+              <button onclick="resetIPURL()">❌ Re-enter</button>
+            </div>
+          </div>
+
+          <!-- 📺 Video Feed -->
+          <div class="video-preview">
+            <!-- <video id="ipcamFeed" autoplay playsinline></video> -->
+             <img id="ipcamFeed" />
+          </div>
+
+          <!-- 🖼️ Canvas + Captured Image -->
+          <canvas id="ipcamCanvas"></canvas>
+          <img id="ipCapturedImage" />
+
+
+          <!-- 📸 Capture / Upload Buttons -->
+          <div class="ipcam-buttons">
+            <button id="ipCaptureBtn">📸 Capture</button>
+          </div>
+          <div class="ipPostCaptureButtons">
+            <button onclick="submitImage(2, imageDataURL)">⬆️ Upload</button>
+            <button onclick="retakeIPCam()">🔄 Retake</button>
+          </div>
+            <div id="IPCameradiagnosisResults" class="diagnosis-section"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>DermAI</h2>
+          <p>
+            Your personalized dermatologist powered by AI for accurate results.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="https://kiddosphere.in">Founder</a></li>
+            <!-- <li><a href="/src/html/login.html">Login</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: derm.ai@gmail.com</p>
+          <p>Phone: +91-9353146515</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DermAI. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
