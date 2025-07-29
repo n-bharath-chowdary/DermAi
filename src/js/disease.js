@@ -219,6 +219,8 @@ const answers = [];
 let progressBar;
 let questions = [];
 
+alert("This is not a Real & Perfect please consult a DOCTOR for beter results");
+
 function showSection(id) {
   const form = document.getElementById("skinForm");
   document
@@ -284,6 +286,12 @@ function showSection(id) {
     initIPCam();
   }
 }
+
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+
 
 function startDiagnosisFlow() {
   const form = document.getElementById("skinForm");
@@ -549,7 +557,7 @@ function submitImage(no = null, imgFile) {
     // })
     .catch((err) => {
       console.error(err);
-      alert("Upload failed." + err);
+      // alert("Upload failed." + err);
     });
 
   setTimeout(() => {
