@@ -8,6 +8,11 @@
 //     opitons: ["Face", "Other area of body"],
 //   },
 // ];
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+
 // const face = [
   // {
   //   q: "Where on your face is the issue located?",
