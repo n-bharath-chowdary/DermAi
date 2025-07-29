@@ -10,7 +10,7 @@
 
 ---
 
-🚀 [**Live Demo** »](https://dermai.kiddosphere.in)
+## 🚀 [**Live Demo**](https://dermai.kiddosphere.in)
 
 ## 🧬 What is DermaI?
 
