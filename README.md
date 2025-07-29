@@ -10,6 +10,8 @@
 
 ---
 
+🚀 [**Live Demo** »](https://dermai.kiddosphere.in)
+
 ## 🧬 What is DermaI?
 
 **DermaI** is a smart dermatology assistant that can predict skin conditions using:
