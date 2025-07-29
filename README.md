@@ -75,10 +75,14 @@ Ideal for early screening, personal use, and low-resource settings where dermato
 
 ## 📸 Sample UI Screens
 
-> <img src="https://github.com/user-attachments/assets/f6a417e9-9f8e-4e03-a0be-c2da75106b18" width="200"/>
-> <img src="https://github.com/user-attachments/assets/f6a417e9-9f8e-4e03-a0be-c2da75106b18" width="200"/>
-> <img src="https://github.com/user-attachments/assets/f6a417e9-9f8e-4e03-a0be-c2da75106b18" width="200"/>
-> <img src="https://github.com/user-attachments/assets/f6a417e9-9f8e-4e03-a0be-c2da75106b18" width="200"/>
+<img src="src/img/Screenshot 2025-07-29 103625.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103638.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103714.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103722.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103743.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103806.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103824.png" height="600" weight="600"/>
+<img src="src/img/Screenshot 2025-07-29 103836.png" height="600" weight="600"/>
 
 ---
 
