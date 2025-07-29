@@ -110,6 +110,12 @@ const skinQuestions = [
   },
 ];
 
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.classList.toggle("active");
+}
+
+
 let current = 0;
 const answers = [];
 let progressBar;
