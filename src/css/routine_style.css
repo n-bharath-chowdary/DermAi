@@ -1,31 +1,29 @@
 .about {
-  padding: 0rem 2rem;
-  margin: 5rem 7rem;
+  padding: 2rem;
+  margin: 5rem auto;
   background-color: #e8fff1;
-  /* border: 1px solid #a4fca5; */
-  /* box-shadow: 0 3px 8px rgba(103, 255, 118, 0.879); */
   color: #008909;
   font-weight: 500;
   position: relative;
+  border-radius: 20px;
+  max-width: 1200px;
+  box-shadow: 0 0 12px rgba(0, 128, 0, 0.1);
 }
 
 .about h2 {
   text-align: right;
-  position: absolute;
-  font-size: 40px;
-  width: 49%;
-  right: 0;
+  font-size: 2.5rem;
+  width: 100%;
   font-style: italic;
   font-weight: 800;
   color: #00b615;
   font-family: "Lucida Sans", sans-serif;
   margin-bottom: 3rem;
-  padding-right: 2rem;
 }
 
 .about h2 span {
   display: block;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 800;
   color: rgb(0, 92, 20);
   letter-spacing: 5px;
@@ -35,8 +33,8 @@
 /* Grid Layout */
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 /* Base Card Style */
@@ -45,8 +43,7 @@
   border: 2px solid #00872493;
   border-radius: 20px;
   overflow: hidden;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 128, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 128, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
   animation: glow 2s ease-in-out infinite alternate;
 }
@@ -58,142 +55,26 @@
 
 .card-style img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
 .card-content {
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .card-content h4 {
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
 .card-content p {
-  font-size: 15px;
+  font-size: 1rem;
   text-align: justify;
 }
 
-/* Zigzag alignment */
-.card1,
-.card3 {
-  margin-right: 1rem;
-}
-.card2,
-.card4 {
-  margin-left: 1rem;
-}
-.card1 {
-  height: fit-content;
-  margin-top: 5rem;
-}
-.card2 {
-  height: fit-content;
-  margin-top: 15rem;
-}
-.card3 {
-  height: fit-content;
-  margin-top: -9rem;
-}
-.card4 {
-  height: fit-content;
-  margin-bottom: 5rem;
-  /* margin-top: 1rem; */
-}
-.card4 img {
-  height: 450px;
-}
-.impact-statement {
-  position: absolute;
-  width: 46%;
-  top: 76rem;
-}
-.impact-text {
-  font-weight: 800;
-  font-style: italic;
-}
-.impact-text h3 {
-  left: 2rem;
-  font-weight: 900;
-  font-size: 25px;
-  text-align: left;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.impact-text p {
-  left: 2rem;
-  font-weight: 800;
-  font-size: 18px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.impact-text .signature-line {
-  font-size: 23px;
-  font-family: "Borel", cursive;
-  font-weight: 500;
-  text-align: justify;
-  color: #016508;
-}
-.details {
-  margin: 3rem 2rem;
-  padding: 0px 2px;
-  justify-items: center;
-  position: relative;
-}
-.tool-tabs {
-  gap: 15px;
-}
-.tool-tabs .camera-options {
-  justify-items: center;
-  gap: 15px;
-}
-.enter-instructions h2 {
-  text-align: center;
-  font-size: large;
-  font-weight: 600;
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.enter-instructions span {
-  background-color: #98faa2;
-  border: 1px solid #007c08;
-  color: #004a10;
-  padding: 1rem;
-  border-radius: 10px;
-  margin: 1.5rem auto;
-  font-size: 1.02rem;
-  position: relative;
-  height: fit-content;
-  font-weight: 600;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 2.5px;
-  display: flex;
-  justify-self: center;
-  width: fit-content;
-}
-.open-card {
-  margin: 2.5rem 1.5rem;
-}
-
-.progress-bar {
-  height: 15px;
-  background: linear-gradient(to right, #3ff52e, #01ba1f);
-  transition: width 0.3s ease;
-  margin-bottom: 2rem;
-  border-radius: 9px;
-  padding: 5px;
-  align-items: center;
-  display: flex;
-}
-
-.upload-section {
-  margin: 2rem 2rem;
-  padding: 1rem 0rem;
-}
-
-/* Optional: Unique glow delays */
+/* Responsive Zigzag Positioning */
 .card1 {
   animation-delay: 0s;
 }
@@ -206,12 +87,133 @@
 .card4 {
   animation-delay: 1.5s;
 }
+.card4 img {
+  height: 400px;
+}
 
+/* Impact Section */
+.impact-statement {
+  margin-top: 4rem;
+  background: #dbffe5;
+  padding: 2rem;
+  border-left: 5px solid #00a21a;
+  border-radius: 10px;
+}
+
+.impact-text h3 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: left;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.impact-text p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: Cambria, Georgia, serif;
+}
+
+.impact-text .signature-line {
+  font-size: 1.3rem;
+  font-family: "Borel", cursive;
+  font-weight: 500;
+  color: #016508;
+  margin-top: 1rem;
+}
+
+/* Instructions */
+.enter-instructions h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.enter-instructions span {
+  display: inline-block;
+  background-color: #98faa2;
+  border: 1px solid #007c08;
+  color: #004a10;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 1rem;
+}
+
+/* Utility Containers */
+.details,
+.upload-section {
+  margin: 2rem 0;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* Tool Tab Styling */
+.tool-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tool-tabs .camera-options {
+  gap: 15px;
+  justify-content: center;
+}
+
+.open-card {
+  margin: 2.5rem auto;
+  padding: 1rem;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 15px;
+  background: linear-gradient(to right, #3ff52e, #01ba1f);
+  transition: width 0.3s ease;
+  border-radius: 9px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Animations */
 @keyframes glow {
   from {
     box-shadow: 0 0 10px #05ab18;
   }
   to {
     box-shadow: 0 0 20px #2aff61;
+  }
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 3rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .about h2,
+  .about h2 span {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .impact-statement {
+    padding: 1rem;
+  }
+
+  .impact-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .impact-text p,
+  .impact-text .signature-line {
+    font-size: 1rem;
   }
 }
