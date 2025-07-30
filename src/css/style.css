@@ -91,14 +91,6 @@ header {
   animation: scan-move 8s linear infinite;
   opacity: 0.7;
 }
-
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 101;
-}
-
 .sticky-action-bar {
   position: sticky;
   overflow: hidden;
@@ -150,13 +142,6 @@ header {
   letter-spacing: 1px;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .action-btn {
   padding: 8px 16px;
   border: 3px solid #2fcc40;
@@ -179,19 +164,42 @@ header {
   border: 3px solid #5eff61;
 }
 
-.nav-links {
+.navbar {
   display: flex;
-  gap: 24px;
-  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: relative;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* 🍔 Hamburger Button */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+/* 🧭 Navigation Links Container */
+.nav-container {
+  display: flex;
+}
+
+/* 🧷 Individual Links */
 .nav-links a {
+  color: #fff;
   text-decoration: none;
-  color: #333;
+  margin: 0 1rem;
   font-weight: 500;
-  position: relative;
-  font-size: 20px;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ffd5;
 }
 
 .nav-links a::after {
@@ -203,10 +211,6 @@ header {
   bottom: -4px;
   background-color: #00b712;
   transition: width 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #028e10;
 }
 
 .nav-links a:hover::after {
@@ -1072,12 +1076,36 @@ header {
     transform: translateY(0);
   }
 
-  .nav-links a {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+   .hamburger {
+    display: block;
   }
+
+  .nav-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1c1c1c;
+    flex-direction: column;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav-container.show {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+  }
+  
   .sticky-action-bar {
     flex-direction: column;
     gap: 15px;
