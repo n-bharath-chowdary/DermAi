@@ -4,7 +4,7 @@
   scroll-padding-top: 90px;
 }
 
-#face-scanner-loader {
+.face-scanner-loader {
   position: fixed;
   inset: 0;
   background-color: #000;
