@@ -8,10 +8,14 @@
 //     opitons: ["Face", "Other area of body"],
 //   },
 // ];
+// function toggleMenu() {
+//   const nav = document.getElementById("navLinks");
+//   nav.classList.toggle("active");
+// }
 function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  nav.classList.toggle("active");
+  document.getElementById("navLinks").classList.toggle("active");
 }
+
 
 // const face = [
   // {
