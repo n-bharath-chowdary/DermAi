@@ -101,10 +101,10 @@
 //   return box;
 // }
 
-export function toggleMenu() {
-  const nav = document.querySelector('.nav-container');
-  nav.classList.toggle('active');
-}
+// function toggleMenu() {
+//   const nav = document.querySelector('.nav-container');
+//   nav.classList.toggle('active');
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
   const faqCards = document.querySelectorAll(".faq-card");
