@@ -713,36 +713,6 @@ function toggleMenu() {
 // === index.js ===
 // Handles section switching, loader, and master control
 
-import { startDiagnosisFlow } from "./disease.js";
-import { skinRoutineQS } from "./routine.js";
-
-
-const progressBar = document.createElement("div");
-progressBar.className = "progress-bar";
-
-export const answers = [];
-export let current = 0;
-
-export function showSection(id, type = null) {
-  const form = document.getElementById("skinForm");
-  document.querySelectorAll(".tool-section").forEach((sec) => sec.classList.add("hidden"));
-  document.getElementById(id).classList.remove("hidden");
-
-  const cam = document.getElementById("camera-options");
-  cam.classList.toggle("hidden", !(id === "disease" || id === "detect"));
-
-  if (id === "details") {
-    if (type === null && current === 0) {
-      if (!form.parentElement.contains(progressBar)) {
-        form.parentElement.insertBefore(progressBar, form);
-      }
-      startDiagnosisFlow();
-    } else if (type === 1) {
-      skinRoutineQS();
-    }
-  }
-}
-
 // document.addEventListener("DOMContentLoaded", () => faqCardAnimi());
 
 document.addEventListener("DOMContentLoaded", function () {
