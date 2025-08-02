@@ -219,7 +219,7 @@ const answers = [];
 let progressBar;
 let questions = [];
 
-alert("This is not a Real & Perfect please consult a DOCTOR for beter results");
+alert("This is not a Perfect Diagnosis. So, please consult a DOCTOR for beter results");
 
 function showSection(id) {
   const form = document.getElementById("skinForm");

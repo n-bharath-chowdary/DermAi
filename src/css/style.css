@@ -1018,6 +1018,7 @@ header {
 
   .image-content {
     margin-top: 20px;
+    display: none;
   }
 
   .cta-button {
@@ -1118,6 +1119,11 @@ header {
     text-align: center;
     gap: 30px;
   }
+  .diagnosis-promo {
+    padding: 2rem 1rem;
+    min-width: 90%;
+    margin: 0rem 0rem;
+  }
   .diagnosis-promo h2 {
     font-size: 2rem;
   }
@@ -1146,7 +1152,7 @@ header {
   .overlay-text {
     position: static;
     transform: none;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     max-width: 100%;
     margin-top: -150px;
   }
