@@ -104,9 +104,8 @@ python app.py
 This project is licensed under the MIT License — see the LICENSE file for details.
 
 ---
-## 🧑‍💻 Author & Maintainer
-👨‍💻 Bharath – @n-bharath-chowdary
-Drop a star ⭐ on the repo if you like it!
+
+## Drop a star ⭐ on the repo if you like it!
 
 ---
 ## 🙌 Acknowledgements
@@ -130,9 +129,7 @@ Every person who helped test or validate!
 ## 💬 Want to contribute?
 PRs are welcome! Fork it, improve it, and let’s revolutionize skincare together.
 
-Wanna add some spice with a custom badge like `Made with ❤️ by Kiddosphere` or `AI Inside™`? I can generate SVGs too.
-
-Let me know if you'd like this converted to Markdown+HTML for GitHub Pages rendering, or if you want a lightweight hosted preview of this readme layout.
+Wanna add some spice with a custom badge like `Made with ❤️ by Kiddosphere` 
 
 ---
 ## 🙋‍♂️ Author
