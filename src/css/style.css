@@ -420,7 +420,7 @@ header {
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.25);
+/*   background: rgba(0, 0, 0, 0.25); */
   padding: 0rem 2rem;
   max-width: 40%;
   color: rgb(2, 74, 24);
