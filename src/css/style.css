@@ -157,6 +157,10 @@ header {
   flex-wrap: wrap;
 }
 
+.nav-container.active {
+  display: block;
+}
+
 .action-btn {
   padding: 8px 16px;
   border: 3px solid #2fcc40;
@@ -326,7 +330,7 @@ header {
   margin: 0.5rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .diagnosis-promo ul li::before {
@@ -416,7 +420,7 @@ header {
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  /* background: rgba(0, 0, 0, 0.25); */
+  background: rgba(0, 0, 0, 0.25);
   padding: 0rem 2rem;
   max-width: 40%;
   color: rgb(2, 74, 24);
@@ -1000,13 +1004,6 @@ header {
     height: 45px;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    z-index: 101;
-  }
-
   .home-content {
     flex-direction: column;
     padding: 20px;
@@ -1017,7 +1014,6 @@ header {
   }
 
   .image-content {
-    margin-top: 20px;
     display: none;
   }
 
@@ -1079,6 +1075,9 @@ header {
     text-decoration: none;
     font-weight: bold;
   }
+  .nav-container.active {
+    display: block;
+  }
   .sticky-action-bar {
     flex-direction: column;
     gap: 15px;
@@ -1121,7 +1120,8 @@ header {
   }
   .diagnosis-promo {
     padding: 2rem 1rem;
-    min-width: 90%;
+    max-width: 100%;
+    min-width: fit-content;
     margin: 0rem 0rem;
   }
   .diagnosis-promo h2 {
@@ -1148,11 +1148,21 @@ header {
   .benefit-overlay-card {
     height: auto;
   }
+  
+  .slider{
+    min-width: fit-content;
+    max-width: 90%;
+    margin: 1rem 1rem;
+  }
+
+  .overlay-bg {
+    filter: none;
+  }
 
   .overlay-text {
     position: static;
     transform: none;
-    /* background: rgba(0, 0, 0, 0.4); */
+    background: none;
     max-width: 100%;
     margin-top: -150px;
   }

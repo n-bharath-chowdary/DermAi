@@ -109,7 +109,7 @@
 .impact-statement {
   position: absolute;
   width: 46%;
-  top: 76rem;
+  bottom: 3rem;
 }
 .impact-text {
   font-weight: 800;
@@ -213,5 +213,77 @@
   }
   to {
     box-shadow: 0 0 20px #2aff61;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .action-btn.opened {
+    width: 100%;
+    font-size: 1rem;
+    height: 45px;
+  }
+  .impacted-statement {
+    bottom: 0rem;
+  }
+  .card-grid {
+    gap: 0;
+  }
+  .about {
+    max-width: 100%;
+    min-width: fit-content;
+    margin: 0rem 0rem;
+    padding: 5px;
+  }
+  .about h2 {
+    width: 50%;
+    font-size: 25px;
+    padding-right: 1.5rem;
+  }
+  .about h2 span {
+    font-size: 27px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  .impact-text h3 {
+    font-size: 16px;
+  }
+  .impact-text p {
+    font-size: 13px;
+  }
+  .impact-text .signature-line {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .info-block {
+    min-width: 7.2rem;
+    max-width: fit-content;
+  }
+  .pdf-button, .map-button {
+    max-width: fit-content;
+    min-width: 10rem;
+  }
+  .card {
+    margin: 0.8rem;
+    max-width: 10rem;
+    min-width: fit-content;
+    padding: 0.8rem 0.5rem;
+  }
+  .tools-section {
+    margin-top: 10px;
+    padding: 37px;
+  }
+  .upload-container {
+    padding: 2rem 0rem;
+  }
+  .pdf-button, .map-button{
+    max-width: fit-content;
+    min-width: 15rem;
+  }
+  .caminfo {
+    padding: 1rem;
+  }
+  .cameraGIF {
+    width: 200px;
+    height: 220px;
   }
 }

@@ -46,7 +46,7 @@ html {
 .impacted-statement {
   position: absolute;
   width: 46%;
-  top: 80rem;
+  bottom: 3rem;
 }
 
 .impact-text .signatured-line {
@@ -330,7 +330,7 @@ html {
 }
 
 .upload-actions button {
-  margin: 0 10px;
+  margin: 10px 10px;
   padding: 0.5rem 1.2rem;
   font-weight: 600;
   border: none;
@@ -677,5 +677,51 @@ html {
     width: 100%;
     font-size: 1rem;
     height: 45px;
+  }
+  .impacted-statement {
+    bottom: 2.5rem;
+  }
+  .card-grid {
+    gap: 0;
+  }
+  .about {
+    max-width: 100%;
+    min-width: fit-content;
+    margin: 0rem 0rem;
+    padding: 5px;
+  }
+  .about h2 {
+    width: 50%;
+    font-size: 25px;
+    padding-right: 1.5rem;
+  }
+  .about h2 span {
+    font-size: 27px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  .impact-text h3 {
+    font-size: 22px;
+  }
+  .impact-text p {
+    font-size: 15px;
+  }
+  .impact-text .signatured-line {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .info-block {
+    min-width: 7.2rem;
+    max-width: fit-content;
+  }
+  .pdf-button, .map-button {
+    max-width: fit-content;
+    min-width: 10rem;
+  }
+  .card {
+    margin: 0.8rem;
+    max-width: 10rem;
+    min-width: fit-content;
+    padding: 0.8rem 0.5rem;
   }
 }
